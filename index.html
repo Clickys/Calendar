@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+        body {
+            background-color: rgb(0, 121, 191);
+        }
+        
+        table {
+            width: 50%;
+            background-color: #D9534F;
+            border: 1px solid white;
+            padding: 10px;
+            padding-bottom: 20px;
+            font-size: 25px;
+            border-radius: 25px;
+            position: relative;
+        }
+        
+        td {
+            border: 1px solid white;
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        th {
+            height: 50px;
+        }
+        
+        .calArrows {
+            text-decoration: none;
+            color: white;
+            font-size: 35px;
+        }
+        
+        #calWraper {
+            position: relative;
+        }
+        
+        #nxt {
+            position: absolute;
+            left: 45%;
+            top: 87%;
+        }
+        
+        #prev {
+            position: absolute;
+            left: 40%;
+            top: 87%;
+        }
+        
+        #calendarTitle {
+            font-family: 'Indie Flower', cursive;
+            font-weight: 600;
+            font-size: 25px;
+            color: white;
+        }
+        
+        .inactiveLink {
+            pointer-events: none;
+            cursor: default;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="calWraper">
+        <table id="myTable">
+            <caption id="calendarTitle">Test</caption>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thur</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td></td>
+            </tr>
+        </table>
+        <a href="#" id="prev" class="calArrows">&larr;</a>
+        <a href="#" id="nxt" class="calArrows">&rarr;</a>
+    </div>
+
+
+    <script src="calendar.js"></script>
+</body>
+
+</html>
