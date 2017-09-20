@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>JS Bin</title>
+    
     <style>
         body {
             background-color: rgb(0, 121, 191);
@@ -19,6 +20,7 @@
             font-size: 25px;
             border-radius: 25px;
             position: relative;
+            margin: auto;
         }
         
         td {
@@ -39,20 +41,18 @@
             font-size: 35px;
         }
         
-        #calWraper {
-            position: relative;
-        }
-        
         #nxt {
+            font-size: 30px;
             position: absolute;
-            left: 45%;
-            top: 87%;
+            top: 0;
+            right: 25%
         }
         
         #prev {
+            font-size: 30px;
             position: absolute;
-            left: 40%;
-            top: 87%;
+            top: 0;
+            left: 25%;
         }
         
         #calendarTitle {
@@ -63,14 +63,43 @@
         }
         
         .inactiveLink {
+            cursor: not-allowed;
             pointer-events: none;
-            cursor: default;
+             
         }
+        
+        #myTable {
+            empty-cells: hide;
+        }
+        
+        .xmasDec {
+            width: 90%;
+            height: 70%;
+            position: absolute;
+            top: -10%;
+            left: 5%;
+        }
+        
+        #calWraper {
+            position: relative;
+        }
+        
+        #myCan {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            width: 90%;
+            height: 70%;
+            opacity: 0, 5;
+        }
+     
 
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <canvas class="myCan" width="100" height="100"></canvas>
     <div id="calWraper">
         <table id="myTable">
             <caption id="calendarTitle">Test</caption>
@@ -123,10 +152,22 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
             </tr>
         </table>
-        <a href="#" id="prev" class="calArrows">&larr;</a>
-        <a href="#" id="nxt" class="calArrows">&rarr;</a>
+        <canvas id="myCan" width="200" height="200" style="background-color: transparent"></canvas>
+            <a href="#" id="prev" class="calArrows"><i class="fa fa-arrow-left" ></i></a>
+        <a href="#" id="nxt" class="calArrows"><i class="fa fa-arrow-right" ></i></a>
+
+
+
     </div>
 
 
